@@ -15,7 +15,7 @@ class Node
 	friend class BTree<elemType>;
 private:
 	elemType data;
-	Node* right;
+	Node* left, right;
 	int leftFlag; //用于标识是否线索，0 时 left 为左孩子结点，1 时为前驱线索
 	int rightFlag; //用于标识是否线索，0 时 right 为右孩子结点，1 时为后继线索
 public:
