@@ -16,7 +16,7 @@ public:
 	elemType front();
 	void enQueue(const elemType& x);
 	void deQueue();
-	seqQueue();
+	~seqQueue();
 };
 
 template <class elemType>
@@ -63,7 +63,7 @@ void seqQueue<elemType>::deQueue()
 }
 
 template <class elemType>
-seqQueue<elemType>::seqQueue()
+seqQueue<elemType>::~seqQueue()
 {
 	delete[] array;
 }
