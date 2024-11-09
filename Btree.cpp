@@ -53,6 +53,7 @@ template <class elemType>
 		void InOrder();// 按中序遍历输出二叉树的结点的数据值
 		void PostOrder();// 按后序遍历输出二叉树的结点的数据值
 		void LevelOrder();// 按中序遍历输出二叉树的结点的数据值
+		~BTree();
 	};
 
 template <class elemType>
@@ -203,4 +204,10 @@ void BTree<elemType>::LevelOrder()
 		if (p->left) que.enQueue(p->left);
 		if (p->right) que.enQueue(p->right);
 	}
+}
+
+template <class elemType>
+BTree<elemType>::~BTree()
+{
+	DelTree();
 }
