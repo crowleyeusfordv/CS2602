@@ -12,7 +12,7 @@ private:
 public:
 	seqStack(int initSize = 100);
 	int isEmpty() { return (Top == -1); };
-	int isFull() { return (Top = maxSize - 1); };
+	int isFull() { return (Top == maxSize - 1); };
 	elemType top();
 	void push(const elemType& e);
 	void pop();
