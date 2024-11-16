@@ -44,7 +44,7 @@ template <class elemType>
 	public:
 		BTree() { root = NULL; }
 		void createTree(const elemType& flag); //创建一棵二叉树
-		int isEmpty() { return (root = NULL); }// 二叉树为空返回 true, 否则返回 false
+		bool isEmpty() { return (root == NULL); }// 二叉树为空返回 true, 否则返回 false
 		Node<elemType>* GetRoot() { return root; }
 		int Size();//求二叉树的结点个数
 		int Height();//求二叉树的高度
