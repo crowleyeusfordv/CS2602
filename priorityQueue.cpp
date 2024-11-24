@@ -5,7 +5,7 @@ class priorityQueue
 {
 private:
     elemType* array;
-    int maxSize，currentLen;
+    int maxSize,currentLen;
     void doubleSpace(); //扩展队队列元素的存储空间             
     void adjust(int hole); //调整下标为hole的元素，使成为小顶堆
     void build(int r); //递归调整
