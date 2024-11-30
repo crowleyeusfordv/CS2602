@@ -106,7 +106,7 @@ void priorityQueue<elemType>::doubleSpace()
 	elemType* tmp = array;
 	array = new elemType[2 * maxSize];
 	if (!array) throw illegalSize();
-	for (int i = 1; i <= currentLen; i++)
+	for (int i = 0; i < currentLen; i++)
 		array[i] = tmp[i];
 	maxSize *= 2;
 	delete[]tmp;
